@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 212, 212);
+   
+}
+.loginInfo{
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#enviar{
+    background-color: #066aff;
+    color: white;
+    border: none;
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in-out;
+}
+#enviar:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px) {
+    .oculto{
+        display: flex;
+    }
+    .oculto{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        justify-content: space-around;
+    }
+    .li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+   
+    .contenedor03{
+        flex-basis: 50%;
+    }
+    
+}
+@media (min-width: 1024px){
+    .contenedor03{
+        flex-basis: 25%;
+    }
+    .primeraParte{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .padre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hijo{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,217 @@
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*body*/
+body{
+    font-family: 'roboto';
+}
+/*header*/
+.contenedor01{
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+.oculto{
+    display: none;
+}
+header{
+    background-color: #EAC926;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+.primeraParte{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.foto-logo{
+    width: 30%; 
+    margin-right: 15px;
+}
+.barraBusqueda{
+    width: 150px;
+}
+.compra{
+    text-align: center;
+    margin: 10px;
+}
+.fa-hand-holding-usd{
+    margin: 5px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.burger-menu{
+    text-align: center;
+}
+
+/*main*/
+.contenedor02{
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(212, 212, 212);
+    padding-bottom: 20px;
+}
+.contenedor03{
+    background-color: white;
+    flex-basis: 100%;
+    padding: 16px;
+    
+}
+.descripcion{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .caja:hover .descripcion {
+    opacity: 1;
+  }
+
+main{
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+}
+.principal{
+    display: flex;
+  flex-wrap: wrap;
+}
+.infoPrecio{
+    display: flex;
+}
+.info{
+    border-top: solid 1px #ebebeb;
+}
+.precios{
+    width: 30%;
+    font-size: 18px;
+    text-align: left;
+    margin: 0px;
+}
+.descuentos{
+    width: 70%;
+    font-size: 18px;
+    color: #39b54a;
+    text-align: right;
+    margin: 0px;
+}
+#foto-banner{
+    width: 100%;
+}
+.foto{
+    width: 50%;
+    box-sizing: border-box;
+}
+.titulares{
+    font-size: 24px;
+    text-align: left;
+}
+.caja{
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 0%;
+}
+
+.icono-camion {
+    text-align: center;
+    color: #39b54a;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    transition: transform 0.5s ease-in-out;
+  }
+.icono-camion:hover{
+    transform: rotate(-90deg);
+}
+.descripcion{
+    text-align: left;
+    font-weight: normal;
+    color: rgb(101, 98, 98);
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/*footer*/
+footer{
+    font-family: 'roboto', sans-serif;
+    
+}
+.contenedor04{
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.fa-bars{
+    padding: 8px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 4px;
+}
+#copyright{
+    margin-top: 20px;
+    margin-left: 3%;
+    text-align: left;
+    font-weight: lighter
+}
+
+/*media queris*/
+
+@media (min-width: 361px) {
+    .oculto{
+        display: flex;
+    }
+    .oculto{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista{
+        display: flex;
+        justify-content: space-around;
+    }
+    .li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+   
+    .contenedor03{
+        flex-basis: 50%;
+    }
+    
+}
+@media (min-width: 1024px){
+    .contenedor03{
+        flex-basis: 25%;
+    }
+    .primeraParte{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .padre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hijo{
+        padding: 5px;
+    }
+}
+
+
